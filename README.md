@@ -1,6 +1,6 @@
 # Vi-Thrill (Vite + Mithril)
 
-> Let's Vi-Thrill
+> Lets Vi-Thrill
 
 ## Download (Clone)
 
