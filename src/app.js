@@ -19,7 +19,6 @@ Object.keys(requireViews).forEach((filename) => {
 });
 
 // Collection of Components
-
 const components = {};
 
 Object.keys(requireComponents).forEach((filename) => {
@@ -53,7 +52,6 @@ Object.keys(requireComponents).forEach((filename) => {
 });
 
 // Collection of Store(Reactives)
-
 const store = {};
 
 Object.keys(requireStore).forEach((filename) => {
