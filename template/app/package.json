@@ -1,23 +1,26 @@
 {
-    "name": "mithril-app",
-    "private": true,
-    "version": "0.1.0",
-    "type": "module",
-    "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "preview": "vite preview"
-    },
-    "devDependencies": {
-      "@babel/cli": "^7.18.10",
-      "@babel/core": "^7.19.1",
-      "@babel/plugin-transform-react-jsx": "^7.19.0",
-      "@babel/preset-env": "^7.19.1",
-      "vite": "^3.1.0",
-      "vite-plugin-babel": "^1.1.2"
-    },
-    "dependencies": {
-      "mithril": "^2.2.2"
-    }
+  "name": "mithril-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "vi-build": "vite build",
+    "preview": "vite preview",
+    "build": "vite build && rollup -c"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/plugin-transform-react-jsx": "^7.19.0",
+    "@babel/preset-env": "^7.19.1",
+    "vite": "^3.1.0",
+    "vite-plugin-babel": "^1.1.2",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.29.0"      
+  },
+  "dependencies": {
+    "mithril": "^2.2.2"
   }
-  
+}
