@@ -1,5 +1,3 @@
-import m from 'mithril';
-
 /* Dynamic Load */
 const requireViews = import.meta.globEager('./views/**/*.jsx');
 const requireComponents = import.meta.globEager(
