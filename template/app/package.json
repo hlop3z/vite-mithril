@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "vi-build": "vite build",
+    "build": "vite build",
     "preview": "vite preview",
-    "build": "vite build && rollup -c"
+    "lib-build": "vite build && rollup -c"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.10",
@@ -16,9 +16,6 @@
     "@babel/preset-env": "^7.19.1",
     "vite": "^3.1.0",
     "vite-plugin-babel": "^1.1.2",
-    "@rollup/plugin-commonjs": "^11.0.1",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "rollup": "^1.29.0"      
   },
   "dependencies": {
     "mithril": "^2.2.2"
