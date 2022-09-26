@@ -35,16 +35,16 @@ Object.keys(requireComponents).forEach((filename) => {
 		requireComponents[filename];
 
 	components[moduleName] = (kwargs) => {
-		let $data = {};
-		let $setup = {};
+		let $data = active.data || {};
+		let $setup = active.setup || {};
 		let $kwargs = {};
 		if (kwargs) {
 			$kwargs = kwargs;
 			if (kwargs.setup) {
-				$setup = kwargs.setup;
+				$setup = { ...$setup, ...kwargs.setup };
 			}
 			if (kwargs.data) {
-				$data = kwargs.data;
+				$data = { ...$data, ...kwargs.data };
 			}
 		}
 		return m(active, {
