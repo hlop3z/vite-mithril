@@ -1,8 +1,10 @@
+import staticJavascriptLogo from "@static/javascript.svg";
+
 const data = {
   count: 0,
 };
 
-export default () => ({
+export default {
   view: ({ attrs }) => (
     <main>
       <a href="https://vitejs.dev" target="_blank">
@@ -11,6 +13,16 @@ export default () => ({
       <a href="https://mithril.js.org/api.html" target="_blank">
         <img
           src="https://mithril.js.org/logo.svg"
+          class="logo mithril"
+          alt="JavaScript logo"
+        />
+      </a>
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        target="_blank"
+      >
+        <img
+          src={staticJavascriptLogo}
           class="logo vanilla"
           alt="JavaScript logo"
         />
@@ -53,4 +65,4 @@ export default () => ({
       <p class="read-the-docs">Click on the Vite logo to learn more</p>
     </main>
   ),
-});
+};

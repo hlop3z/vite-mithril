@@ -56,10 +56,6 @@ main {
 }
 
 .logo.vanilla:hover {
-    filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.logo.mithril:hover {
     filter: drop-shadow(0 0 2em #1a1a1aaa);
 }
 
@@ -105,4 +101,32 @@ button:focus-visible {
     button {
         background-color: #f9f9f9;
     }
+}
+
+
+body,
+.input,
+.button {
+    font: normal 16px Verdana;
+    margin: 0;
+}
+
+.user-list {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.user-list-item {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    color: #333;
+    display: block;
+    margin: 0 0 1px;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.user-list-item:hover {
+    text-decoration: underline;
 }

@@ -1,0 +1,67 @@
+site_name: Vi-Thrill
+site_url: https://hlop3z.github.io/vite-mithril
+repo_url: https://github.com/hlop3z/vite-mithril
+copyright: Copyright © hlop3z
+
+nav:
+  - Introduction: index.md
+  - Application: 
+    - Main: app.md
+  - Views: 
+    - List: views/list.md
+    - Form: views/form.md
+  - Components: 
+    - List: components/list.md
+    - Form: components/form.md
+  - Variables: 
+    - Store: store.md
+  - Plugin: 
+    - StyleCSS: plugin.md
+
+# Configurations
+extra_css:
+  - css/extra.css
+
+theme:
+  name: material
+  locale: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - content.code.annotate
+    # - navigation.expand
+  icon:
+    logo: material/nodejs
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: yellow
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: yellow
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+markdown_extensions:
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

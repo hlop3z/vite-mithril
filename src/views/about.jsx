@@ -3,7 +3,7 @@ const data = {
   count: 0,
 };
 
-export default () => ({
+export default {
   view: () => (
     <main>
       <h1 style="margin-top: 90px;">About</h1>
@@ -44,4 +44,4 @@ export default () => ({
       </div>
     </main>
   ),
-});
+};
